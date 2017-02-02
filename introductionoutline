@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Introduction Speech Outline}
+\author{Jeannie Ramelb}
+\date{January 31, 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\subsection{Introduce Name}
+\subsection{Introduce Major}
+\subsection{Introduce what I will be talking about}
+\subsubsection{Why I chose a math major}
+\subsubsection{Why I love math}
+\subsubsection{What math is useful for}
+
+\section{Why I chose a math major}
+\subsection{Story}
+\subsubsection{Mom forced me to learn flashcards}
+\subsubsection{As a result, I received high marks}
+\subsubsection{Mom wanted me to become a nurse, but that's her dream}
+
+\subsection{I was decent at it}
+\subsubsection{Had a great teacher}
+\subsubsection{So I majored in it}
+
+\section{What I love about math}
+\subsection{The friends I've made}
+\subsection{The opportunities you have}
+
+\section{What math is useful for}
+\subsection{More marketable in a workplace despite what field you go in}
+\subsection{Opportunities to study and work abroad}
+\subsection{Helps build skills like creativity, analytical, problem solving}
+
+\section{Conclusion}
+\subsection{Math is great: it's used everywhere}
+\subsection{Although not pursuing a degree or job with math major, it's a great skill to have}
+\subsection{The people you meet through math}
+\subsection{Be a math major}
+\end{document}
