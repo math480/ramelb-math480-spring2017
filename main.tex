@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Projections Onto Subspaces}
+\author{Jeannie Ramelb }
+\date{May 10, 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\
+
+When I spoke to Professor Demeo, he recommend that I do my medium presentation on a topic that was more challenging. I made it pretty obvious in my first presentation that I did not want to pursue a career in mathematics. I told him about the work I do in the insurance industry. He suggested that I talk about projections onto subspaces and ordinary least squares (linear regression) because it can be applied in the insurance industry. I took the challenge and that is why I did my medium 20-minute presentation on projections onto subspaces.
+
+\section{Projections}
+
+\
+
+We can represent systems of linear equations in terms of matrices and vectors. 
+
+Let $ L=span(\overrightarrow{v})$$
+
+$$L=\{a*\overrightarrow{v}|a\in\mathbb{R}}\}$$$$ $where a is all possible scalar multiples. 
+$$$proj_{L}$(\(\overrightarrow{w})$$ $is the shadow of \overrightarrow{w} onto L. Since
+\overrightarrow{v} is the spanning vector of the line L then the projection can be expressed as 
+$$$proj_{L}$(\(\overrightarrow{w})=\frac{\overrightarrow{w}\cdotp\overrightarrow{v}}{\overrightarrow{v}\cdotp\overrightarrow{v}}\cdotp\overrightarrow{v}$$ 
+
+\section{Projections on Subspaces}
+
+\
+
+If V is a subspace of $\mathbb{R}$^n then  $V^\perp$ also subspace. $\overrightarrow{w} \in $\mathbb{R$}^n$ then 
+$\overrightarrow{w}=\overrightarrow{v}+\overrightarrow{x}$ where $\overrightarrow{v}\in V$ and $\overrightarrow{x}\in $V^\perp$ $.
+
+\
+We can define $proj_{V}(\(\overrightarrow{w})=\overrightarrow{v}$ which is part of \overrightarrow{w} that includes \overrightarrow{v}\in V. $We can define $proj_{$V^\perp$}(\(\overrightarrow{w})=\overrightarrow{x}$ which is part of \overrightarrow{w} that includes the orthogonal complement \overrightarrow{x}\in $V^\perp$. This is also a linear transformation. V is a subspace of $\mathbb{R}$^n.  $\{\overrightarrow{s_{1}},\overrightarrow{s_{2}},...,{\overrightarrow{s_{k}}}\}$ $
+is a basis for V set. Then if you take the span of vectors you can construct any vectors in that subspace and those vectors are linearly independent$
+
+The projection of a vector onto subspace is the closest point to another vector contained in V. 
+
+\section{Ordinary Least Squares Regression-Linear Model}
+
+
+We collect data and observation. Linear regression takes this information and summarizes it by drawing a line that represents the data. 
+
+At the origin, the formula of OLS is 
+
+\
+
+\begin{equation}
+    y_{n}=\sum_{i=0}^{k} m_{i}x_{ni}+\epsilon_{n}
+\end{equation}
+
+\
+
+The x variable is considered to be an explanatory variable where as y variable is considered to be a dependent variable. m is found by minimizing error or prediction. 
+
+For example, if we take the x-axis to be traveling and y-axis to be happiness, 
+the formula would be
+y=b+mx+\epsilon,$ where y is happiness, b is y-intercept, and $ \epsilon $ is the error. 
+b tells you what value of happiness would be if the value of independent variable was 0. m says by how much the value of happiness changes in response to a change in the value of traveling.
+
+Linear regression takes all of the values, squares them, and sums them all up $$\sum_{i=1}^{n} (Y_{i}-\hat{Y_{i}})^2$$
+or $$\sum_{i=1}^{n} (Y_{i}-(mx_{i}+b))^2$$
+This will spit out a positive value because of the positive distance. We get this line that best represents the data "by minimizing the y-distances from the corresponding y-values on the to-be-determined line. The square of each of those distances is of the form (y_{j}-(mx_{j}+b))^2."$$ 
+$The total distance is considered the square root of the sum of these squares. 
+
+\
+To relate this back to projections, linear regression is exactly the projection of y values onto subspace of the span of two vectors$\overrightarrow{v_{1}}$ and $\overrightarrow{v_{2}}$, where $\overrightarrow{v_{1}}$ 
+is the vector in R^2 $with all coordinates in 1$ $and $\overrightarrow{v_{2}}$ is the vector in R^2 $with coordinates $x_{j}$.
+Minimizing the square of distance from y to the vector in subspace of the span of vectors is the same as finding the orthogonal projection.
+ $
+
+\section{Ordinary Least Squares Regression-Multiple}
+
+\
+
+I provided a slide with a picture on this, however, I did not elaborate on it. This OLS method can be extended to models that involve 2 or more explanatory variables. The algebra becomes really complex because of the multiple explanatory variables.
+
+\section{Linear Regression Applications}
+
+\
+
+Linear regression helps us find out where a business is going and growing and is essential for achieving long term goals. Linear Regression can be used in business to evaluate trends and make predictions. We use the example of sales. Trend line using linear regression can be created and the company may use the slope to estimate the future sales. 
+
+Linear regression is used in economics to determine how consumers act when there has been a change in price.  Linear regression helps guide decisions on pricing an item based on demand.
+
+Linear regression is particularly used in implication for research.  Researchers can use small prediction models to talk about a larger population sample. If what we can predict of what a smaller population does, we can predict what a larger population does. This can save an institution or a researcher a lot of money.
+
+Linear regression can be used to analyze a risk. For example in auto insurance, linear regression pulls together a homogeneous units which are similar types of risk into a pool, charges each person in the pool a small premium in exchange for protection. An underwriter uses this method to determine how likely it is that a loss will occur. With linear regression, actuaries can actually predict how likely a loss is to occur!
+
+\section{Works Cited}
+
+\
+
+Cherlin, Gregory. "Lecture 25 Orthogonal Projection and Least Squares Approximation." Cherlin Math 250. Rutgers, The State University of New Jersey, n.d. Web. 11 May 2017.
+
+\
+
+Linear Regression. Yale University, n.d. Web. 11 May 2017.
+
+\
+
+Shitut, Neha. "Popular Applications of Linear Regression for Businesses." Analytics
+Training. Jigsaw Academy Education Pvt Ltd, 11 Apr. 2017. Web. 11 May 2017.
+\end{document}
